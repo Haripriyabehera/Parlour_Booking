@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --primary-text-color: hsl(204, 12%, 83%);
+  --padding-inline-section: 20px;
+}
+.grid-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  background-size: 50px 50px; /* Adjust grid size */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+  z-index: 9999;
+}
+
+.container_Parlour {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+
